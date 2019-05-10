@@ -30,4 +30,4 @@
       simplify))
 
 (comment (q "{ contact_by_id(id: \"foo\") { id name company_name }}")
-         (q "{ contact_by_id(id: \"1\") { id name company_name }}"))
+         (q "{ contact_by_id(id: \"1\") { id name company_name phones { phone contact { id name } }}}"))

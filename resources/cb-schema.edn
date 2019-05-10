@@ -5,7 +5,16 @@
                 {:id {:type (non-null ID)}
                  :name {:type (non-null String)}
                  :company_name {:type (non-null String)}
-                 :title {:type (non-null String)}}}}
+                 :title {:type (non-null String)}
+                 :phones {:type (list :Phone)
+                          :description "Phones number of this contact"
+                          :resolve :Contact/phones}}}
+  :Phone
+  {:fields
+   {:id {:type (non-null ID)}
+    :phone {:type (non-null String)}
+    :contact {:type (non-null :Contact)
+              :resolve :Phone/contact}}}}
 
  :queries
  {:contact_by_id

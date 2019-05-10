@@ -1,13 +1,26 @@
 {:contacts
- [{:id "1"
-   :name "Yan Zaycev"
+ [{:id           "1"
+   :name         "Yan Zaycev"
    :company_name "Facebook"
-   :title "Senior software engineer"}
-  {:id "2"
-   :name "Yanis Urbis"
+   :title        "Senior software engineer"
+   :phones       #{"1" "2"}}
+  {:id           "2"
+   :name         "Yanis Urbis"
    :company_name "Noname"
-   :title "Engineer"}
-  {:id "3"
-   :name "Ksusha Zhukova"
+   :title        "Engineer"
+   :phones       #{"3"}}
+  {:id           "3"
+   :name         "Ksusha Zhukova"
    :company_name "Google"
-   :title "CEO"}]}
+   :title        "CEO"
+   :phones       #{"4"}}]
+
+ :phones
+ [{:id    "1"
+   :phone "+79644943211"}
+  {:id    "2"
+   :phone "+79644943212"}
+  {:id    "3"
+   :phone "+79644943213"}
+  {:id    "4"
+   :phone "+79644943214"}]}
