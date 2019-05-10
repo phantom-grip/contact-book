@@ -1,0 +1,13 @@
+{:contacts
+ [{:id "1"
+   :name "Yan Zaycev"
+   :company_name "Facebook"
+   :title "Senior software engineer"}
+  {:id "2"
+   :name "Yanis Urbis"
+   :company_name "Noname"
+   :title "Engineer"}
+  {:id "3"
+   :name "Ksusha Zhukova"
+   :company_name "Google"
+   :title "CEO"}]}
