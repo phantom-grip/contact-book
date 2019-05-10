@@ -1,0 +1,16 @@
+{:objects
+ {:Contact
+  {:description "Contact book's contact"
+   :fields
+                {:id {:type (non-null ID)}
+                 :name {:type (non-null String)}
+                 :company_name {:type (non-null String)}
+                 :title {:type (non-null String)}}}}
+
+ :queries
+ {:contact_by_id
+  {:type :Contact
+   :description "Access a BoardGame by its unique id, if it exists."
+   :args
+   {:id {:type ID}}
+   :resolve :query/contact_by_id}}}
